@@ -1,25 +1,26 @@
 #include<stdio.h>
 int main(){
-    int choice,a,b;
-    printf("Enter the choice :");
-    scanf("%d",&choice);
+    int a,b;
+    char choice;
+    printf("Enter the math sign to do the operation you need  : ");
+    scanf("%c",&choice);
     printf("Enter a and b :");
     scanf("%d %d",&a,&b);
     switch (choice)
     {
-    case 1:
+    case '+':
         printf("The addition of these two numbers is :%d\n",a+b);
         break;
-    case 2:
+    case '-':
         printf("The subraction of these two numbers is :%d\n",a-b);
         break;
-    case 3:
+    case '*':
         printf("The multiplication of these two numbers is :%d\n",a*b);
         break;
-    case 4:
+    case '/':
         printf("While division the quotient of these two numbers is:%d\n",a/b);
         break;
-    case 5:
+    case '%' :
         printf("While division the reminder of these two numbers is:%d\n",a%b);
         break;
     
